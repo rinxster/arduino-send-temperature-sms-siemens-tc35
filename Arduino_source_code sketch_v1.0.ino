@@ -11,7 +11,7 @@ void loop() {
 tempc = 0;
 tempc = ( 5.0 * analogRead(pin) * 100.0) / 1024.0;
 sendTextMessage();
-delay(90000);
+delay(90001);
 }
 void sendTextMessage() {
 gsmSerial.print("AT+CMGF=1\r");
